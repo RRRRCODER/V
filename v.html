@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Card</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      background-image:url('/Users/ridhimapooli/Downloads/v.jpeg');
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    #message {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    #openButton {
+      background-color: #ff4d4d;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    #openButton:hover {
+      background-color: #e60000;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    /* Optionally, you can style the links as needed */
+    a:hover {
+        text-decoration: underline; /* Add underline on hover, for example */
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="card">
+  <p id="message">Happy Valentine's Day, my love! Will you be my valentine?</p>
+  <button id="openButton" onclick="openCard()"><a href="v2.html">YES!</a></button>
+</div>
+
+<script>
+  function openCard() {
+    alert("You've opened the card! I love you!");
+    
+  }
+</script>
+
+</body>
+</html>
